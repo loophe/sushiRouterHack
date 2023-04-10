@@ -1,4 +1,5 @@
 import { grab } from "./grab.js";
+import { getHash } from "./getHash.js";
 
 async function range(start,end){
     console.log(Date());
@@ -10,7 +11,8 @@ async function range(start,end){
         var codes = await grab(blockNumber)
         blockNumber++
         if(codes.length > 0){
-            console.log(codes)
+            // console.log(codes)
+            getHash(codes)
         }    
     }
  

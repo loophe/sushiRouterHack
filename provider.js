@@ -1,9 +1,10 @@
 import Web3 from 'web3'
 import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 dotenv.config()
-// const WS_PROVIDER_LINK = process.env.ETHERUM_MAIN_LINK
+
+// export const HTTP_PROVIDER_LINK = process.env.ETHERUM_MAIN_LINK
 // const WS_PROVIDER_LINK = process.env.ARBITRUM_MAIN_LINK//arbitrum-one node end-point
-const HTTP_PROVIDER_LINK = process.env.POLYGON_MAIN_LINK//arbitrum-one node end-point
+export const HTTP_PROVIDER_LINK = process.env.POLYGON_MAIN_LINK//arbitrum-one node end-point
 
 const optionsWs = {
     timeout: 30000, // ms
