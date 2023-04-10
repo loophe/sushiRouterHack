@@ -1,3 +1,5 @@
 node_modules
 tx.log
 .env
+txTrace.log
+
